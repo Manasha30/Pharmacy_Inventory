@@ -1,13 +1,10 @@
-
+import logo from './logo.svg';
 import './App.css';
-import Homepage from './Homepage';
-
-
+import React from 'react'
 function App() {
   return (
     <div className="App">
-     <h1>Pharmacy Inventory</h1>
-     <Homepage/>
+    <h1>Pharmacy inventory</h1>
     </div>
   );
 }
