@@ -1,10 +1,9 @@
 body {
-    background-image: url("https://wallpapercave.com/wp/wp1931673.jpg");
+    background-image: url("medicine.jpg");
     border: 2px solid rgb(197, 187, 187);
     padding: 160px;
-    height: 420px;
     background-repeat: no-repeat;
-    background-size: 1000px 1000px;
+    background-size: 2000px 1000px;
     background-position:left bottom;
 }
 
@@ -32,11 +31,5 @@ input[type="submit"] {
   border: 1px solid #01d28e;
   color: #fff;
   padding: 10px 10px;
-
-}
-h1{
-  text-align: center;
-  font-style: italic;
-  color: black;
 
 }
