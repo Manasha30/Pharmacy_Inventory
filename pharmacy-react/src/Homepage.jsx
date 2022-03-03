@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "./homepage.css"
-class homepage extends Component {
+import "./CSS/homepage.css"
+class Homepage extends Component {
     state = {  } 
     render() {
                 return (
@@ -10,9 +10,10 @@ class homepage extends Component {
                         <a href="/Login">Login </a>
                         <a href="/Register">Register </a>                        
 
+                        
                     </div>   
-                        )
+                        );
             }
         }
         
-        export default homepage;
+        export default Homepage;
