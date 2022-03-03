@@ -13,7 +13,6 @@ body {
 h1{
   text-align: center;
   color:white;
- 
   padding: 110px;
   
 
@@ -184,4 +183,18 @@ input[type="submit"] {
   font-size: 20px;
   margin: 50px 0;
   padding-left: 650px;
+}
+table,th,td{
+  border:1px solid rgba(30, 184, 255, 0.705);
+  border-collapse:collapse;
+  width:400px;  
+  height:1px;
+  color: rgb(255, 192, 239);
+}
+th{
+  text-align: left;
+  color: rgb(0, 255, 242);
+}
+th,td{
+  padding: 10px; 
 }
