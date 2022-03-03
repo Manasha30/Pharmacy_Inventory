@@ -1,36 +1,187 @@
 
 body {
-    background-image: url("https://wallpapercave.com/wp/wp1931673.jpg");
-    border: 2px solid rgb(197, 187, 187);
-    padding: 160px;
-    background-repeat: no-repeat;
-    background-size: 2000px 1000px;
-    background-position:left bottom;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("medicine_pills.jpg");
+    
+    
+    background-size: cover;
+    
+    width:100%;
+    height: 100vh;
+    background-position: center;
+    
+}
+h1{
+  text-align: center;
+  color:white;
+ 
+  padding: 110px;
+  
+
 }
 
-.right {
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    border: 3px solid #73AD21;
-    padding: 10px;
-  }
+.two{
+  text-align: center;
+  color:aqua;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+  
+  
+}
+.three{
+  text-align: center;
+  color:aqua;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+
+}
+.four{
+  text-align: center;
+  color:aqua;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+}
+
+
+
+button{
+  width:200px;
+    padding:15px 0;
+    text-align: center;
+    margin: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #e2d170;
+    background: transparent;
+    color: white;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+span{
+  background: #e2d170;
+  height: 100%;
+  width:0;
+  border-radius: 25px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  z-index:-1;
+  transition:0.5s;
+  text-align: center;
+  
+}
+a{
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 100px;
+ 
+}
+
+button:hover span{
+  width: 100%;
+
+}
+button:hover{
+  border:none;
+}
+
+ 
+
+
+h1.solid{
+border-radius: 4px;
+font-size: 50px;
+padding: 15px;
+margin: 5px;
+text-align: center;
+color:rgba(255, 255, 0, 0.74);
+padding-top: 100px;
+}
+
+h1.one{
+  color:orange;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .div{
-    background-color:red;
-    width:100px;
-    border:15px solid red;
-    padding:70px;
-   margin:20px;
-  }
+  text-align: center;
+  margin: 20px 0;
+  background-color:red;
+  width:35px;
+  border:15px solid red;
+  padding:70px;
+ margin:20px;
+}
 
 input[type="submit"] {
   margin-top: 50px;
   cursor: pointer;
   font-size: 20px;
-  background: #01d28e;
+  background:thistle;
   border: 1px solid #01d28e;
-  color: #fff;
+  color:black;
   padding: 10px 10px;
 
+}
+
+.static{
+  color:cyan;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+
+.a1{
+  text-align: center;
+  color:#e2d170;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+
+}
+.b1{
+  text-align: center;
+  color:#e2d170;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+}
+.c1{
+  text-align: center;
+  color:#e2d170;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+}
+.d1{
+  text-align: center;
+  color:#e2d170;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
+}
+.e1{
+  text-align: center;
+  color:#e2d170;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 0;
+  padding-left: 650px;
 }

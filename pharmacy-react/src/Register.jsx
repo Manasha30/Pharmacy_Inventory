@@ -50,21 +50,21 @@ handleSubmit = (event) => {
 render(){
         return (<div>
             <form onSubmit={this.handleSubmit}>
-                            <h1>User Registration</h1>
-                            <label>FirstName :</label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} /><br />
+                            <h1 class="static">User Registration</h1>
+                            <label class="a1">FirstName :</label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} /><br />
                             <br></br>
-                            <label>LastName :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} /><br />
+                            <label class="b1">LastName :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} /><br />
                             <br></br>
-                            <label>Email id:</label> <input type="text" value={this.state.Emaild} onChange = {this.Emailidhandler} /><br />
+                            <label class="c1">Email id:</label> <input type="text" value={this.state.Emaild} onChange = {this.Emailidhandler} /><br />
                             <br></br>
-                           <label> Password :</label> <input type="password" value={this.state.password} onChange={this.passwordhandler} /><br />
+                           <label class ="d1"> Password :</label> <input type="password" value={this.state.password} onChange={this.passwordhandler} /><br />
                             <br></br>
-                           <label>Gender : </label><select onChange={this.genderhandler} defaultValue="Select Gender">
+                           <label class="e1">Gender : </label><select onChange={this.genderhandler} defaultValue="Select Gender">
                                 <option defaultValue>Select Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select><br />
-                            <input type="submit" value="Submit" />
+                            <center><input type="submit" value="Register" /></center>
                         </form>
         </div>);
     }
