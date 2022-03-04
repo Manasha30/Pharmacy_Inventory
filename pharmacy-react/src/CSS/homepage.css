@@ -81,6 +81,7 @@ a{
   text-align: center;
   padding-left: 150px;
   padding-right: 100px;
+  padding-top: 200px;
  
 }
 
@@ -105,7 +106,7 @@ color:rgba(255, 255, 0, 0.74);
 padding-top: 100px;
 }
 
-h1.one{
+.one{
   color:orange;
   font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
@@ -136,7 +137,7 @@ input[type="submit"] {
   color:cyan;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 35px;
+  font-size: 44px;
 }
 
 .a1{
@@ -198,3 +199,10 @@ th{
 th,td{
   padding: 10px; 
 }
+
+ #demo{
+  text-align: center;
+  color:white;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
