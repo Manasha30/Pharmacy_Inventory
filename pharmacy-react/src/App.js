@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './Homepage';
 import Register from './Register';
 import StockEventsTable from './components/StockEventsTable';
@@ -7,7 +8,6 @@ import axios from 'axios';
 import AddStockEvent from './components/AddStockEvent';
 import AddProduct from './components/AddProduct';
 import Login from './Login';
-import ReactTable from './ReactTable';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
@@ -21,7 +21,6 @@ function App() {
       <Route exact path='/stockevents' element={<StockEventsTable/>}></Route>
       <Route exact path='/Register' element={< Register/>}></Route>
       <Route exact path='/Login' element={<Login/>}></Route>
-      <Route exact path='/ReactTable' element={<ReactTable/>}></Route>
 </Routes>
 </Router>   
   );
