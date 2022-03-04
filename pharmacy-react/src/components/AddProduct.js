@@ -14,10 +14,10 @@ class AddProduct extends Component{
         return(
             <div className="product">
                 <div>
-                    <p className="NPtagline">Our biggest updates ever</p>
+                    <h1 className="NPtagline">The Medicines You Wish To Buy</h1>
                 </div>
                 <div className="AddProduct">
-                    <h3 className="NPtitle">Input a new Medicine</h3>
+                    <h3 className="NPtitle">Medicine Name</h3>
                     <form>
                         <input
                             type="text"
@@ -25,7 +25,7 @@ class AddProduct extends Component{
                             value={name}
                             onChange={(event)=> this.setState({name: event.target.value})}
                         />
-                        <button className="CreateButton" type="submit" onClick={()=>this.handleSubmit1()}>Create new Medicine</button>
+                        <button className="CreateButton" type="submit" onClick={()=>this.handleSubmit1()}><span></span>Add new Medicine</button>
                     </form>
                 </div>
             </div>

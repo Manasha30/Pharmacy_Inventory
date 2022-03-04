@@ -1,5 +1,6 @@
 import React from "react";
 import StockDetails from "./stockDetails";
+import "./product.css";
 function StockEventsTable(props){
     const products = [{id:1, name:"dolo"},{id:2, name:"crocin"}]
     const stockEvents = [{id:1, type:"paracetamol",qty:"3"},{id:2, type:"paracetamol",qty:"10"}]
