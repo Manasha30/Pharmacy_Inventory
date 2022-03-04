@@ -18,14 +18,17 @@ class AddProduct extends Component{
                 </div>
                 <div className="AddProduct">
                     <h3 className="NPtitle">Medicine Name</h3>
-                    <form>
+                    <form class="medicine">
                         <input
                             type="text"
                             name="name"
+                            placeholder="Enter the Medicine name"
                             value={name}
                             onChange={(event)=> this.setState({name: event.target.value})}
                         />
-                        <button className="CreateButton" type="submit" onClick={()=>this.handleSubmit1()}><span></span>Add new Medicine</button>
+                        <div class="welcome">
+                        <button className="CreateButton" type="submit"  onClick={()=>this.handleSubmit1()}><span></span> Add new medicine </button>
+                        </div>
                     </form>
                 </div>
             </div>

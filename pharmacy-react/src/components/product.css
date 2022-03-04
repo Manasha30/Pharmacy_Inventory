@@ -1,5 +1,5 @@
 .product{
-    background-color: rgb(119, 119, 167);
+    background-image: linear-gradient(rgba(187, 87, 154, 0.7), rgba(155, 124, 155, 0.7), rgb(85, 99, 121));
     background-size: cover;
     background-position: center;
     display: flex;
@@ -13,14 +13,40 @@
 .NPtagline{
     text-align: center;
     font-size: 40px;
-    color: aliceblue;
-    font-style: italic;
-
+    color: rgb(18, 154, 172);
+    font-style: oblique;
+    font-family: Brush Script MT;
 }
 .NPtitle{
     font-size: 20px;
-    color: azure;
+    color: white;
     padding-top: 100px;
+    padding-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+    font-family: Verdana;
+}
+.medicine{
+    width: 300px;
+    height: 50px;
+    position: relative;
+}
+.medicine input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(187, 101, 61);
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+.welcome{
+    text-align: center;
+    padding-top: 30px;
+}
+.CreateButton{
+    color: black;
 }
 .StockEventTable{
     background-color: rgb(173, 88, 120);
