@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from 'axios';
+import "./product.css";
 class AddProduct extends Component{
     state={
         name: ''
@@ -11,7 +12,7 @@ class AddProduct extends Component{
     render(){
         const{name} = this.state;
         return(
-            <div>
+            <div className="product">
                 <div>
                     <p className="NPtagline">Our biggest updates ever</p>
                 </div>

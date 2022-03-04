@@ -1,25 +1,22 @@
 import React from "react";
-import stockDetails from './stockDetails'
+import StockDetails from "./stockDetails";
 function StockEventsTable(props){
-    const{products, stockEvents} = props
+    const products = [{id:1, name:"dolo"},{id:2, name:"crocin"}]
+    const stockEvents = [{id:1, type:"paracetamol",qty:"3"},{id:2, type:"paracetamol",qty:"10"}]
+    console.log(products);
     return(
         
         <div className="StockEventTable">
-            {products.map(product=>{
-                const relevantStockEvents = stockEvents.filter(se=> se.product.id === product.id)
-                const stockTotal = relevantStockEvents.reduce((accumulator, currentElement)=>{
-                    return accumulator = currentElement.qty;
-                },0);
-                return(
-                    <div className="StockEventTable__productsContainer">
-                        <stockDetails
+            Number of products available: {products.length}
+            {products.map((product,index)=>(
+                    <div className="StockEventTable__productsContainer" key={index}>
+                        <StockDetails
                             name={product.name}
-                            total={stockTotal}
-                            stockEvents={relevantStockEvents}
+                            total="20"
+                            stockEvents={stockEvents}
                         />
                     </div>
-                );
-            })}
+            ))}
         </div>
     );
 }
