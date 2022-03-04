@@ -7,7 +7,7 @@
     margin: 0 auto;
     max-width: 320px;
   }
-
+}
 
 .homepage {
    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -73,10 +73,6 @@ span {
   z-index: -1;
   transition: 0.5s;
   text-align: center;
-  padding-left: 150px;
-  padding-right: 100px;
-  padding-top: 200px;
- 
 }
 
 button:hover span{
@@ -106,9 +102,6 @@ h1.solid {
   color: rgba(255, 255, 0, 0.74);
 }
 
-.one{
-  color:orange;
-}
 h1.one {
   color: orange;
   font-size: 50px;
@@ -139,8 +132,6 @@ h1.one {
 .static {
   color: cyan;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 44px;
   font-family: "Times New Roman", Times, serif;
   font-size: 35px;
 }
@@ -188,26 +179,4 @@ h1.one {
   font-size: 20px;
   margin: 50px 0;
   padding-left: 650px;
-}
-table,th,td{
-  border:1px solid rgba(30, 184, 255, 0.705);
-  border-collapse:collapse;
-  width:400px;  
-  height:1px;
-  color: rgb(255, 192, 239);
-}
-th{
-  text-align: left;
-  color: rgb(0, 255, 242);
-}
-th,td{
-  padding: 10px; 
-}
-
- #demo{
-  text-align: center;
-  color:white;
-  font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} 
 }
