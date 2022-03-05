@@ -22,8 +22,7 @@ function App() {
       <Route exact path='/stockevents' element={<StockEventsTable/>}></Route>
       <Route exact path='/Register' element={< Register/>}></Route>
       <Route exact path='/Login' element={<Login/>}></Route>
-      <Route exact path='/medicineInventory' element={< MedicineInventory/>} ></Route>
-     
+      <Route exact path='/medicineInventory' element={< MedicineInventory/>} ></Route>     
 </Routes>
 </Router>   
   );
