@@ -8,7 +8,6 @@ import axios from 'axios';
 import AddStockEvent from './components/AddStockEvent';
 import AddProduct from './components/AddProduct';
 import Login from './Login';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
