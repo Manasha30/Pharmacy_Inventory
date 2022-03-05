@@ -10,8 +10,7 @@
 }
 
 .homepage {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("medicine_pills.jpg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("medicine_pills.jpg");
 
   background-size: cover;
   background-position: center;
@@ -21,19 +20,8 @@
   justify-content: center;
   align-items: center; 
   width: 100%;
-
-body {
-  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("medicine_pills.jpg");
-  
-    
-    
-    background-size: cover;
-    
-    width:100%;
-    height: 100vh;
-    background-position: center;
-    
 }
+
 h1{
   text-align: center;
   color:white;
