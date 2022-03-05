@@ -12,6 +12,7 @@ export default function Register() {
   function handleSubmit(event) {
     event.preventDefault();
   }
+  
 
   return (
     <div className="homepage">
