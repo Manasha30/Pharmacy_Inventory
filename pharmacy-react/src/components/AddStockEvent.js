@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../index.css'
+import "./product.css";
 class AddStockEvent extends Component {
     state = { 
         qty: 0,
@@ -40,34 +40,45 @@ class AddStockEvent extends Component {
         const { qty, type, product, show}=this.state;
         const {products}=this.props;
         return ( 
-            <div> 
+            <div className='stockpage'> 
                 <div className='ASEtagline'>
                     <p className='ASEtitle'>The greatest wealth is health.</p>
                 </div>
                 <div className='AddStockEvent'>
-                    <h1>Add Stock Event</h1>
+                    <h1>Add Medicines</h1>
                     <button className='AddButton' onClick={()=> this.setState({show: !show})}>Add</button>
                     {show &&
                         <form onSubmit={this.handleSubmit}>
+                            <div class="change">
                             <select
                                 name="product"
                                 value={product}
                                 onChange={this.handleChange}
                             >
-                            <option value='no'>Please Select a product</option>
-                            {product.localeCompare((product,i)=>(
-                                <option key={i} value={product.id}>
-                                    {product.name}
-                                </option>
-                            ))}
+                            <option value='no'>Please Select a Medicine</option>
+                            <option value="dolo">Dolo</option>
+                            <option value="paracetamol">Paracetamol</option>
+                            <option value="Crocin">Crocin</option>
+                            <option value="Saridon">Saridon</option>
+                            <option value="Naprosyn">Naprosyn</option>
+                            <option value="Citrem Plus">Citrem Plus</option>
+                            <option value="Norvasc">Norvasc</option>
+                            <option value="Ramipril">Ramipril</option>
+                            <option value="Relief">Relief</option>
+                            <option value="Vomikind">Vomikind</option>
                             </select>
-
+                            </div>
+                            <hr></hr>
+                            <div class="style">
                             <input
                                 type="number"
                                 name="qty"
                                 value={qty}
                                 onChange={this.handleChange}
                             />
+                            </div>
+                            <hr></hr>
+                            <div class="content">
                             <select
                                 name="type"
                                 value={type}
@@ -76,7 +87,9 @@ class AddStockEvent extends Component {
                             <option value='add'>Add</option>
                             <option value='remove'>Remove</option>
                             </select>
+                            <hr></hr>
                             <button className="ASEbutton">Submit</button>
+                            </div>
                         </form>
                     }
                 </div>
