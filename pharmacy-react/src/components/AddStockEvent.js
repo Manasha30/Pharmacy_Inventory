@@ -13,24 +13,10 @@ class AddStockEvent extends Component {
         this.setState({[event.target.name]:event.target.value})
     }
 
-    handleSubmit = async(event)=>{
-        event.preventDefault()
+    handleSubmit =()=>{
         const{qty,type,product}=this.state;
         if(product !== 'no'){
-            const data={
-                qty,
-                type,
-                product: parseInt(product)
-            }
-            const AddStockRes=await axios({
-                method:'POST',
-                url: 'http://local:3000/stockevents',
-                data
-            })
-            if(AddStockRes.status===200){
-                alert("Success!")
-                window.location=window.location.href;
-            }
+            alert("Success");       
         }else{
             alert("No product chosen");
             return
@@ -88,7 +74,7 @@ class AddStockEvent extends Component {
                             <option value='remove'>Remove</option>
                             </select>
                             <hr></hr>
-                            <button className="ASEbutton">Submit</button>
+                            <button className="ASEbutton" onClick={()=>this.handleSubmit()}>Submit</button>
                             </div>
                         </form>
                     }
