@@ -59,7 +59,7 @@ function MedicineInventory() {
   ]
   var data = [
     {
-      "medicinename": "paracetamol",
+      "medicinename": "Paracetamol",
       "Pid": "1023",
       "cost": "100",
       "mdate": "2020-01-01",
@@ -73,7 +73,7 @@ function MedicineInventory() {
         "edate":"2022-04-08"
     },
     {
-        "medicinename":"Thyroxin",
+        "medicinename":"Thyroxine",
         "Pid":"2504",
         "cost":"170",
         "mdate":"2021-05-30",
@@ -93,7 +93,7 @@ function MedicineInventory() {
         "cost":"90",
         "mdate":"2022-01-28",
         "edate":"2022-10-10"
-    },
+    }
     
 
     

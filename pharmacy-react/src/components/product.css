@@ -166,7 +166,7 @@
 .medical{
     font-size: 40px;
     padding-bottom: 30px;
-    color: azure;
+    color:darkturquoise;
 }
 .inventory{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("plus.jpg");
@@ -179,4 +179,5 @@
     width: 100%;
     height: 100vh;
     width: 100vw;
+
 }
