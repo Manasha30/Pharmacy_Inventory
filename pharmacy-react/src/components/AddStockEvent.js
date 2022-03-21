@@ -28,11 +28,11 @@ class AddStockEvent extends Component {
         return ( 
             <div className='stockpage'> 
                 <div className='ASEtagline'>
-                    <p className='ASEtitle'>The greatest wealth is health.</p>
+                    <p className='ASEtitle'><i><b>"The greatest wealth is health."</b></i></p>
                 </div>
                 <div className='AddStockEvent'>
-                    <h1>Add Medicines</h1>
-                    <button className='AddButton' onClick={()=> this.setState({show: !show})}>Add</button>
+                    <h1>Select Medicines</h1>
+                    <button className='AddButton' onClick={()=> this.setState({show: !show})}>Add/Remove</button>
                     {show &&
                         <form onSubmit={this.handleSubmit}>
                             <div class="change">
