@@ -11,29 +11,37 @@
     width: 100vw;
 }
 .NPtagline{
-    text-align: center;
+    /* text-align: center; */
     font-size: 40px;
     color: rgb(201, 173, 47);
     font-style: oblique;
-    font-family: Brush Script MT;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 40px;
+    left: 500px;
     
 }
 
 .NPtitle{
     font-size: 30px;
-    color: rgb(43, 2, 26);
-    padding-top: 80px;
-    padding-bottom: 20px;
-    font-style: italic;
+    color: rgb(235, 20, 145);
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-style: bold;
     text-align: center;
     font-family: Verdana;
+    position: absolute;
+    top: 100px;
+    left: 610px;
     
 }
 
 .medicine{
     width: 300px;
     height: 50px;
-    position: relative;
+    position: absolute;
+    top: 200px;
+    left: 630px;
 }
 
 .medicine input{

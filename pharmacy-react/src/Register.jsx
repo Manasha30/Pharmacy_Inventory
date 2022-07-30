@@ -4,13 +4,33 @@ import Button from "react-bootstrap/Button";
 import "./CSS/homepage.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 export default function Register() {
+  const [firstname, setfirstName] = useState("");
+  const [lastname, setlastName] = useState("");
+  const [address, setAddress] = useState("");
+  const [address_2, setAddress_2] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zip, setZip] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [gender, setGender] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+
+
+  const path = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log(firstname+lastname+address+address_2+city+state+zip+email+password+gender);
+    axios.post("http://localhost:8083/pharmacy/register",{firstname, lastname, address, address_2, city, state, zip, email, password,gender,mobileNumber}).then(()=>{
+      console.log("Added Successfully");
+    }).then(()=>{path('/')})
+    alert("Successfully Registered");
+
   }
   
 
@@ -21,46 +41,62 @@ export default function Register() {
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>FirstName</Form.Label>
-            <Form.Control placeholder="First name" />
+            <Form.Control placeholder="First name" onChange={(e)=>setfirstName(e.target.value)}/>
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridPassword">
             <Form.Label>LastName</Form.Label>
-            <Form.Control placeholder="Last name" />
+            <Form.Control placeholder="Last name" onChange={(e)=>setlastName(e.target.value)}/>
           </Form.Group>
         </Row>
 
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" placeholder="Enter email" onChange={(e)=>setEmail(e.target.value)}/>
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
           </Form.Group>
         </Row>
 
+         <Form.Group as={Col} controlId="formGridGender">
+           <Form.Label>Gender</Form.Label>
+           <Form.Select defaultValue="Choose..." onChange={(e)=>setGender(e.target.value)}>
+           <option>Choose...</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+              <option>Do Not Wish to Disclose</option>
+           </Form.Select>
+         </Form.Group>
+
         <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>Address</Form.Label>
-          <Form.Control placeholder="1234 Main St" />
+          <Form.Label>House Number and Street</Form.Label>
+          <Form.Control placeholder="Enter the Address" onChange={(e)=>setAddress(e.target.value)} />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formGridAddress2">
-          <Form.Label>Address 2</Form.Label>
-          <Form.Control placeholder="Apartment, studio, or floor" />
+          <Form.Label>House Area </Form.Label>
+          <Form.Control placeholder="Enter the Landmark or Area" onChange={(e)=>setAddress_2(e.target.value)} />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formGridMobileNumber">
+          <Form.Label>Mobile Number </Form.Label>
+          <Form.Control placeholder="Enter the Mobile Number" onChange={(e)=>setMobileNumber(e.target.value)} />
         </Form.Group>
 
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridCity">
             <Form.Label>City</Form.Label>
-            <Form.Control />
+            <Form.Control onChange={(e)=>setCity(e.target.value)}/>
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridState">
             <Form.Label>State</Form.Label>
-            <Form.Select defaultValue="Choose...">
+            <Form.Select defaultValue="Choose..." onChange={(e)=>setState(e.target.value)}>
               <option>Choose...</option>
               <option>Andhra Pradesh</option>
               <option>Andaman and Nicobar Islands</option>
@@ -103,7 +139,7 @@ export default function Register() {
 
           <Form.Group as={Col} controlId="formGridZip">
             <Form.Label>Zip</Form.Label>
-            <Form.Control />
+            <Form.Control onChange={(e)=>setZip(e.target.value)} />
           </Form.Group>
         </Row>
 
@@ -111,7 +147,7 @@ export default function Register() {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" onClick={handleSubmit}>
           Register
         </Button>
       </Form>

@@ -214,7 +214,7 @@ function MedicineInventory() {
     <div className="inventory">
       <h1 className="medical">Medicine Inventory</h1>
       <MaterialTable
-        title="You can see everything in Medicine Inventory................"
+        title="Medicine Details in Inventory"
         columns={state.columns}
         data={state.data}
         icons={tableIcons}

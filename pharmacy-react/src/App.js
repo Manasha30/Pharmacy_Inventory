@@ -13,6 +13,7 @@ import MedicineInventory from './components/MedicineInventory';
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage1 from './Homepage1';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
       <Route exact path='/Register' element={< Register/>}></Route>
       <Route exact path='/Login' element={<Login/>}></Route>
       <Route exact path='/medicineInventory' element={< MedicineInventory/>} ></Route>  
+      <Route exact path='/Homepage1' element={<Homepage1/>} ></Route>
 
 
 </Routes>
